@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="index.css">
+        <title>Invoice Creator</title>
+    </head>
+    <body>
+        
+        <header>
+            <h1>Invoice creator</h1>
+            <p>Thanks for choosing GoodCorp, LLC!</p>
+        </header>
+        
+        <main>
+            <section class="service-button-container">
+                <!-- RENDER BUTTONS -->
+            </section>
+            
+           <section class="task-list">
+     <div class="task-list-title">       
+    <h2 class="list-title">TASK</h2>
+    <h2 class="list-total">TOTAL</h2>
+    </div>
+    <ul id="task-list">
+        <!-- Dynamically inserted tasks here -->
+    </ul>
+    
+    <hr>
+    
+    <div class="total-container">
+    <h3>NOTES</h3>
+    
+    
+    <h3>Total Amount</h3>
+    
+    </div>
+    <p id="payment-note"></p>
+    <span id="total-amount">$0</span>
+    <button class="btn-submit" type="submit"><i class="fa-solid fa-envelope"></i>Send Invoice</button>
+    <p id="invoice-message"></p>
+
+</section>
+
+        </main>
+        
+        <script src="index.js"></script>
+    </body>
+</html>

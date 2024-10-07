@@ -1,0 +1,179 @@
+:root {
+    --primary-color: #3A69D2; 
+    --background-color: #1F2937; 
+    --text-color-light: #fff; 
+    --text-color-muted: #D5D4D8; 
+    --button-bg-light: #D1D4F4;
+    --button-text-dark: #4A4E74; 
+    --task-text-color: #F5F5F5; 
+    --border-color-light: #D1D4F4; 
+    --hover-border-color: #fff; 
+    --dollar-sign: #918E9B;
+}
+
+/********** GLOBAL STYLES **********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--background-color);
+}
+
+/********** LAYOUT **********/
+header, section {
+    max-width: 37.5rem; 
+    margin: 0 auto;
+    padding: 0 2.5rem; 
+}
+
+header {
+    color: var(--text-color-light);
+    background-color: var(--primary-color);
+    padding: 2.5rem; 
+    height: 12.5rem; 
+    text-align: center;
+}
+
+/********** TYPOGRAPHY **********/
+h1 {
+    font-size: 2.5rem; 
+    font-weight: 800;
+    margin-bottom: 0.3125rem;
+}
+
+/********** BUTTONS **********/
+.service-btn {
+    border-radius: 0.4375rem; 
+    color: var(--button-text-dark);
+    background-color: var(--button-bg-light);
+    padding: 0.5625rem 0.8125rem; 
+    border: 0.125rem solid var(--border-color-light); 
+    font-weight: 500;
+    cursor: pointer;
+    transition: border 0.3s ease;
+}
+
+.service-btn:hover {
+    border: 0.125rem solid var(--hover-border-color); 
+}
+
+.btn-submit {
+    width: 100%;
+    margin-top: 1.875rem; 
+    padding: 0.5625rem 1.0625rem; 
+    border-radius: 0.4375rem; 
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/********** SERVICE BUTTONS CONTAINER **********/
+.service-button-container {
+    padding: 2.5rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem; 
+}
+
+/********** TASK LIST **********/
+.task-list {
+    color: var(--task-text-color);
+    padding: 1.25rem; 
+}
+
+.task-list-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-title, .list-total {
+    color: var(--text-color-muted);
+    font-weight: 700;
+    font-size: 0.75rem; 
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.625rem 0; 
+    font-size: 1.5rem; 
+}
+
+ul li .task-name {
+    display: flex;
+    font-size: 1.25rem; 
+    align-items: center;
+    gap: 0.625rem; 
+}
+
+ul li .remove-link {
+    font-size: 0.9rem;
+    color: var(--text-color-muted);
+    cursor: pointer;
+    margin-left: 0.3125rem; 
+}
+
+ul li .task-price {
+    margin-left: auto;
+}
+
+.dollar-sign {
+    font-size: 1.5rem; 
+    color: var(--dollar-sign); 
+    font-weight: 300; 
+    margin-right: 0.0625rem; 
+}
+
+
+/********** TITLE STYLING **********/
+.task-list h2, .task-list h3 {
+    margin-bottom: 1.25rem; 
+}
+
+hr {
+    margin: 1.25rem; 
+}
+
+/********** TOTAL CONTAINER **********/
+.total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-container h3 {
+    font-size: 0.75rem; 
+    font-weight: 600;
+    color: var(--text-color-muted);
+}
+
+#payment-note {
+    font-size: 0.75rem; 
+    font-weight: 400;
+    color: var(--task-text-color);
+}
+
+#total-amount {
+    font-size: 2rem;
+    color: var(--task-text-color);
+    display: block;
+    text-align: right;
+}
+
+i.fa-solid {
+    margin-right: 0.625rem; 
+}
+
+#invoice-message {
+    display: none;
+    padding: 2rem;
+    text-align: center;
+}
+
